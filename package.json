@@ -1,7 +1,7 @@
 {
-  "name": "why-did-you-update",
-  "version": "0.0.8",
-  "description": "Patch React to discover unnecessary re-renders",
+  "name": "log-when-you-update",
+  "version": "0.0.3",
+  "description": "Patch React to log when update render",
   "main": "lib/index.js",
   "files": [
     "es6",
@@ -16,22 +16,27 @@
     "test:watch": "nwb test --server",
     "release:patch": "nwb build && npm version patch && npm publish"
   },
-  "dependencies": {
-    "lodash": "^4.13.1"
-  },
   "peerDependencies": {
     "react": "^15.0 || 0.14.x"
   },
   "devDependencies": {
-    "lodash-webpack-plugin": "^0.8.1",
     "nwb": "0.9.x",
     "react": "0.14.x",
     "react-dom": "0.14.x"
   },
-  "author": "Gabe Scholz",
+  "author": {
+    "name": "Joon Kyoung",
+    "email": "firejune@gmail.com",
+    "url": "http://firejune.com"
+  },
   "license": "MIT",
-  "repository": "https://github.com/garbles/why-did-you-update",
+  "repository": "https://github.com/firejune/log-when-you-update",
+  "bugs": {
+    "url": "https://github.com/firejune/log-when-you-update/issues"
+  },
   "keywords": [
+    "log",
+    "console",
     "react-component"
   ]
 }
