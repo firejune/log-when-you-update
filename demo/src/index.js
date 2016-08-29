@@ -1,9 +1,9 @@
 import React from 'react'
 import {render} from 'react-dom'
 
-import whyDidYouUpdate from '../../src'
+import logWhenYouUpdate from '../../src'
 
-whyDidYouUpdate(React)
+logWhenYouUpdate(React)
 
 class ClassDemo extends React.Component {
   render () {
