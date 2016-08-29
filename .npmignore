@@ -1,0 +1,8 @@
+.babelrc
+.eslintignore
+.eslintrc
+.npmignore
+/demo
+/tests
+/src
+/umd
