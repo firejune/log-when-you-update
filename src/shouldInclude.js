@@ -1,9 +1,18 @@
-import _some from 'lodash/some'
-import _isFunction from 'lodash/isFunction'
-
 export const shouldInclude = (displayName, {include, exclude}) => {
-  let isIncluded = _some(include, r => r.test(displayName))
-  let isExcluded = _some(exclude, r => r.test(displayName))
+  let isIncluded = false
+  let isExcluded = false
+
+  for (let i = 0; i < include.length; i++) {
+    if (isIncluded = include[i].test(displayName)) {
+      break
+    }
+  }
+
+  for (let i = 0; i < exclude.length; i++) {
+    if (isExcluded = exclude[i].test(displayName)) {
+      break
+    }
+  }
 
   return isIncluded && !isExcluded
 }
