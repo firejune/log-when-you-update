@@ -1,7 +1,7 @@
 {
   "name": "log-when-you-update",
-  "version": "0.0.3",
-  "description": "Patch React to log when update render",
+  "version": "0.0.4",
+  "description": "Notification your console on log when React is render updates",
   "main": "lib/index.js",
   "files": [
     "es6",
